@@ -4,7 +4,7 @@ metadata:
   name: database
   labels:
     "gslab": lamp
-  namespace: longhorn-system  
+  namespace: 2-tier-appp  
   annotations:
     volume.aplha.kubernetes.io/storage-class: longhorn
 spec:
@@ -22,7 +22,7 @@ metadata:
   name: mysql
   labels:
     "gslab" : lamp
-  namespace: longhorn-system 
+  namespace: 2-tier-appp 
 spec:
   replicas: 1
   revisionHistoryLimit: 5
@@ -79,7 +79,7 @@ metadata:
   name: mysql
   labels:
    "gslab": lamp
-  namespace: longhorn-system   
+  namespace: 2-tier-appp   
 spec:
   selector:
     app: mysql
