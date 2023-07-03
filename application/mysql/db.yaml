@@ -8,7 +8,7 @@ metadata:
   annotations:
     volume.aplha.kubernetes.io/storage-class: longhorn
 spec:
-  storageClassName: "longhorn-static"
+  storageClassName: "longhorn"
   resources:
     requests:
       storage: 1Gi
