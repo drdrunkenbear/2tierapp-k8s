@@ -87,3 +87,15 @@ spec:
   - port: 3306
     protocol: TCP
   type: ClusterIP
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysql-credentials
+  labels:
+    "gslab": lamp
+type: Opaque
+data:
+  rootpw: Z3NMYWIhMjM=
+  user: Z3NMYWIhMjM=
+  password: Z3NMYWIhMjM=
